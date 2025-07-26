@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dominique | Web Developer & Automation Specialist</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home" class="nav-link active" onclick="scrollToSection('home')">Home</a></li>
+        <li><a href="#about" class="nav-link" onclick="scrollToSection('about')">About</a></li>
+        <li><a href="#services" class="nav-link" onclick="scrollToSection('services')">Services</a></li>
+        <li><a href="#portfolio" class="nav-link" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link" onclick="scrollToSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="scroll-container" id="main-container">
+    <div id="home" class="scroll-section" data-src="views/home.html"></div>
+    <div id="about" class="scroll-section" data-src="views/about.html"></div>
+    <div id="services" class="scroll-section" data-src="views/services.html"></div>
+    <div id="portfolio" class="scroll-section" data-src="views/portfolio.html"></div>
+    <div id="contact" class="scroll-section" data-src="views/contact.html"></div>
+    <div id="footer" class="scroll-section" data-src="views/footer.html"></div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
