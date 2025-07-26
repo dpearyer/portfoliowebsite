@@ -20,12 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
  
 
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-    toggle.textContent = isDark ? '🌞' : '🌓';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
 
   // Smooth scroll if scrollToSection is used
   window.scrollToSection = function(id) {
